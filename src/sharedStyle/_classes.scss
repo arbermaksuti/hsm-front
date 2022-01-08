@@ -1,0 +1,116 @@
+@import "./variables";
+
+.p-relative {
+  position: relative;
+}
+.p-absolute {
+  position: absolute;
+}
+.p-fixed {
+  position: fixed;
+}
+.t-center {
+  text-align: center;
+}
+.t-right {
+  text-align: right;
+}
+.w-100 {
+  width: 100%;
+}
+.h-100 {
+  height: 100%;
+}
+.l-0 {
+  left: 0;
+}
+.r-0 {
+  right: 0;
+}
+.t-0 {
+  top: 0;
+}
+.b-0 {
+  bottom: 0;
+}
+.m-auto {
+  margin: auto;
+}
+.d-block {
+  display: block;
+}
+.d-flex {
+  display: flex;
+}
+.f-wrap {
+  flex-wrap: wrap;
+}
+.fd-column {
+  flex-direction: column;
+}
+.ai-center {
+  align-items: center;
+}
+.jc-center {
+  justify-content: center;
+}
+.jc-space_between {
+  justify-content: space-between;
+}
+.jc-space_around {
+  justify-content: space-around;
+}
+.jc-space_evenly {
+  justify-content: space-evenly;
+}
+.c-pointer {
+  cursor: pointer;
+}
+.br-50 {
+  border-radius: 50%;
+}
+
+.borderedDiv {
+  margin-top: 20px;
+  padding: 20px 50px;
+  border-radius: 10px;
+  border: 1px solid $blueBase;
+  @media screen and(max-width: 1200px) {
+    padding: 20px;
+  }
+  @media screen and(max-width: 600px) {
+    padding: 20px 10px;
+  }
+}
+
+.scrollable {
+  padding-right: 10px;
+  overflow-y: auto;
+  direction: ltr;
+  scrollbar-color: #d4aa70 #e4e4e4;
+  scrollbar-width: thin;
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+    border-radius: 100px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    border-left: 0;
+    border-right: 0;
+    background-color: $blueBase;
+  }
+}
+
+
+.pageTitle {
+  font-size: 25px;
+  font-weight: 500;
+  width: fit-content;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #000;
+}

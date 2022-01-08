@@ -1,0 +1,15 @@
+$blueBase: rgba(25, 118, 210, 1);
+$blueLight: rgba(36, 173, 227, 1);
+$blueDark: rgba(18, 87, 156, 1);
+$navbarHeight: 60px;
+$sidebarWidth: 280px;
+$sidebarMobileWidth: 60%;
+
+:export {
+  blueBase: $blueBase;
+  blueLight: $blueLight;
+  blueDark: $blueDark;
+  navbarHeight: $navbarHeight;
+  sidebarWidth: $sidebarWidth;
+  sidebarMobileWidth: $sidebarMobileWidth;
+}

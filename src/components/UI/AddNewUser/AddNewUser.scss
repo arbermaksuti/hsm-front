@@ -1,0 +1,63 @@
+@import "../../../sharedStyle/variables";
+
+.addNewUser {
+  h3 {
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .addNewUser-Input {
+    font-size: 16px;
+    margin-left: 20px;
+    &:first-of-type {
+      margin-left: 15px;
+    }
+    > label {
+      letter-spacing: 1.2px;
+      transition: all 0.3s;
+      margin-left: 5px;
+    }
+    input {
+      border: 2px solid white;
+      box-shadow: 0 0 0 1px #000;
+      appearance: none;
+      border-radius: 50%;
+      width: 12px;
+      height: 12px;
+      background-color: #fff;
+      transition: all ease-in 0.2s;
+      &:checked {
+        background-color: $blueBase;
+        box-shadow: 0 0 0 1px $blueBase;
+        + label {
+          color: $blueBase;
+        }
+      }
+    }
+    &:hover {
+      > label {
+        color: $blueBase;
+      }
+      input {
+        box-shadow: 0 0 0 1px $blueBase;
+      }
+    }
+  }
+  
+  @media screen and(max-width: 600px) {
+    flex-direction: column;
+    text-align: center;
+    .addNewUser-Input {
+      margin: auto;
+      margin-top: 10px;
+      font-size: 20px;
+      &:first-of-type {
+        margin: auto;
+        margin-top: 10px;
+      }
+    }
+    > .buttonPure {
+      width: 50%;
+      margin-top: 20px;
+    }
+  }
+}

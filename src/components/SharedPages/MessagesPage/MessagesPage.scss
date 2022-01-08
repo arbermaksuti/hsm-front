@@ -1,0 +1,80 @@
+@import "../../../sharedStyle/variables";
+
+.messagesP {
+  .messagesP-newMessages  {
+    > h3 {
+      font-weight: 500;
+    }
+  }
+  .messagesP-Content {
+    margin-top: 20px; 
+    
+    .messagesP-OneMessage {
+      padding: 10px 20px;
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      border: 1px solid $blueBase;
+      background-color: rgb(232, 249, 255);
+     
+      .messagesP-TextWrapper {
+        > span {
+          margin-left: 10px;
+        }
+        .from {
+          font-size: 18px;
+          font-weight: 500;
+          color: $blueBase;
+        }
+      }
+      p {
+        width: 90%;
+        padding: 15px 20px;
+        max-height: 160px;
+        font-size: 16px;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: 1px solid $blueBase;
+        background-color: white;
+      }
+      .buttonPure {
+        width: 100%;
+        &:first-of-type {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  @media screen and(max-width: 600px) {
+    .messagesP-Content {
+      .messagesP-OneMessage {
+        flex-direction: column;
+        padding: 10px;
+        .messagesP-TextWrapper {
+          > span {
+            margin-left: initial;
+          }
+          .from {
+            white-space: nowrap;
+          }
+        }
+        p {
+          width: 100%;
+          padding: 10px;
+        }
+      }
+      .messagesP-Buttons {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        margin-top: 15px;
+        .buttonPure {
+          width: 40%;
+          &:first-of-type {
+            margin-bottom: initial;
+          }
+        }
+      }
+    }
+  }
+}

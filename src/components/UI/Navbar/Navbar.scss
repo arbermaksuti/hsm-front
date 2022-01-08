@@ -1,0 +1,14 @@
+@import "../../../sharedStyle/variables";
+
+.navbar {
+  height: $navbarHeight;
+  padding: 10px 50px;
+  z-index: 152;
+  background-color: $blueBase;
+  @media screen and (max-width: 800px) {
+    padding: 10px 30px;
+  }
+  @media screen and (max-width: 600px) {
+    padding: 10px 15px;
+  }
+}

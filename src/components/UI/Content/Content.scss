@@ -1,0 +1,30 @@
+@import "../../../sharedStyle/variables";
+
+.content{
+    min-height: 100vh;
+}
+.content-children {
+    max-height: 100%;
+    top: $navbarHeight;
+    left: $sidebarWidth;
+    min-width: calc(100% - $sidebarWidth);
+    padding: 30px 100px;
+    transition: all 0.5s ease-in-out;
+
+    // Toastify notification goes under navbar
+    .Toastify {
+        .Toastify__toast-container--top-right {
+          top: $navbarHeight;
+        }
+      }
+
+
+      @media screen and (max-width: 1200px) {
+        padding: 20px 30px;
+      }
+      @media screen and (max-width: 800px) {
+        left: 0;
+        width: 100%;
+        padding: 20px;
+      }
+}

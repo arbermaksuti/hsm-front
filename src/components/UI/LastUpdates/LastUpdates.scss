@@ -1,0 +1,49 @@
+@import "../../../sharedStyle/variables";
+
+.lastUpdates {
+  > h3 {
+    font-weight: 500;
+  }
+  .lastUpdates-Content {
+    margin-top: 10px;
+    p {
+      margin: 25px 0;
+      padding-bottom: 3px;
+      border-bottom: 1px solid $blueBase;
+      .name,
+      .type,
+      .from {
+        font-size: 20px;
+        font-style: italic;
+        transition: all 0.2s;
+        color: $blueLight;
+        font-weight: 500;
+      }
+      > a {
+        &:hover {
+          color: $blueDark;
+        }
+      }
+    }
+  }
+  > .buttonPure {
+    margin-top: 15px;
+    margin-left: auto;
+    font-size: 16px;
+    // padding: 10px 20px;
+  }
+  @media screen and(max-width: 600px) {
+    > h3 {
+      text-align: center;
+    }
+    p {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    > .buttonPure {
+      margin-right: auto;
+    }
+  }
+}

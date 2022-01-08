@@ -1,0 +1,77 @@
+@import "../../../sharedStyle/variables";
+
+.notificationsP {
+  .notificationsP-newNotifications  {
+    > h3 {
+      font-weight: 500;
+    }
+  }
+  .notificationsP-Content {
+    margin-top: 20px;
+    .notificationsP-OneMessage {
+      padding: 10px 20px;
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      border: 1px solid $blueBase;
+      background-color: rgb(232, 249, 255);
+      .notificationsP-TextWrapper {
+        > span {
+          margin-left: 10px;
+        }
+        .from {
+          font-size: 18px;
+          font-weight: 500;
+          color: $blueBase;
+        }
+      }
+      p {
+        width: 90%;
+        padding: 15px 20px;
+        max-height: 160px;
+        font-size: 16px;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: 1px solid $blueBase;
+        background-color: white;
+      }
+      .buttonPure {
+        &:first-of-type {
+            margin-right: 10px;
+        }
+      }
+    }
+  }
+  @media screen and(max-width: 600px) {
+    .notificationsP-Content {
+      .notificationsP-OneMessage {
+        flex-direction: column;
+        padding: 10px;
+        .notificationsP-TextWrapper {
+          > span {
+            margin-left: initial;
+          }
+          .from {
+            white-space: nowrap;
+          }
+        }
+        p {
+          width: 100%;
+          padding: 10px;
+        }
+      }
+      .notificationsP-Buttons {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        margin-top: 15px;
+        .buttonPure {
+          width: 40%;
+          &:first-of-type {
+            margin-bottom: initial;
+          }
+        }
+      }
+    }
+  }
+}

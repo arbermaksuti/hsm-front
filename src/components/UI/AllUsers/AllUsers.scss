@@ -1,0 +1,41 @@
+@import "../../../sharedStyle/variables";
+
+.allUsers {
+    > h3 {
+      font-weight: 500;
+    }
+  .allUsers-Content {
+    margin-top: 10px;
+    .allUsers-Div {
+      margin: 25px 0;
+      padding-bottom: 5px;
+      border-bottom: 1px solid $blueBase;
+      > p {
+        font-size: 18px;
+        > span {
+          font-size: 22px;
+          font-weight: 500;
+          color: $blueLight;
+        }
+      }
+    
+    > .buttonPure {
+      font-size: 16px;
+    }}
+  }
+  @media screen and(max-width: 600px) {
+    > h3 {
+      text-align: center;
+    }
+    .allUsers-Div {
+      flex-direction: column;
+      text-align: center;
+      > .buttonPure {
+        margin-top: 10px;
+      }
+      span {
+        white-space: nowrap;
+      }
+    }
+  }
+}

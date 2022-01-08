@@ -1,0 +1,53 @@
+@import "../../../sharedStyle/variables";
+
+.logo {
+  max-height: calc($navbarHeight - 10px);
+  max-width: 500px;
+  > img {
+    max-height: calc($navbarHeight - 20px);
+    margin-right: 20px;
+  }
+  > h3 {
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: letter-spacing 0.3s linear;
+  }
+  span {
+    width: 10px;
+    height: 2px;
+    margin: 0 8px;
+    background-color: #fff;
+  }
+
+  &:hover {
+    > h3 {
+      letter-spacing: 2.5px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    > img {
+      margin-right: 5px;
+    }
+    > h3 {
+      font-size: 0.9em;
+      letter-spacing: normal;
+    }
+    &:hover {
+      > h3 {
+        letter-spacing: initial;
+      }
+    }
+    span {
+      width: 5px;
+      margin: 0 3px;
+    }
+  }
+  @media screen and(max-width: 400px) {
+    span,
+    .titleOnlyOnMobile {
+      display: none;
+    }
+  }
+}

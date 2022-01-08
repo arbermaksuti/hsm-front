@@ -1,0 +1,34 @@
+@import "../../../sharedStyle/variables";
+
+.admin_homeP {
+  .addNewUser {
+    > h2 {
+      margin: 0;
+    }
+    &.addNewUpdates {
+      margin-top: 50px;
+      > h2 {
+        margin-bottom: 20px;
+      }
+      > p {
+        margin-top: 10px;
+        margin-bottom: 15px;
+        padding-bottom: 5px;
+        width: fit-content;
+        border-bottom: 2px solid $blueBase;
+        text-align: left;
+      }
+      span {
+        font-size: 22px;
+        color: $blueBase;
+      }
+      .name {
+        font-weight: 500;
+      }
+      .function {
+        font-weight: 700;
+        font-style: italic;
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+@import "../../../sharedStyle/variables";
+
+.selectLanguage {
+  width: 210px;
+  max-width: 210px;
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  display: flex;
+  flex-direction: column-reverse;
+  max-height: 50px;
+  overflow: hidden;
+  transition: all 0.3s linear;
+  background-color: $blueBase;
+  &.openDropdown {
+    max-height: 150px;
+    svg {
+      transform: rotate(-180deg);
+    }
+    .sl-singleLanguage {
+      &:first-of-type {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+    }
+  }
+}
+.sl-singleLanguage {
+  width: 210px;
+  height: 50px;
+  padding: 10px 10px;
+  margin: auto;
+  transition: all 0.3s linear;
+  border: 1px solid #000;
+  border-bottom: 0;
+  &:first-of-type {
+    border-radius: 5px;
+    border-bottom: 1px solid #000;
+  }
+  &:last-of-type {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  > img {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+  }
+  > h2 {
+    font-weight: 400;
+    letter-spacing: 1.2px;
+  }
+  > svg {
+    font-size: 2em;
+    margin-left: auto;
+    transition: transform 0.3s linear;
+  }
+  &:hover {
+    color: #fff;
+    background-color: $blueDark;
+  }
+}

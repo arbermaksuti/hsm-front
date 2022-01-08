@@ -1,0 +1,79 @@
+@import "../../../../sharedStyle/variables";
+
+.navIcon {
+  width: 40px;
+  height: 40px;
+  margin: 0 15px;
+  background-color: $blueLight;
+  background-size: cover;
+  background-position: center top;
+  >svg {
+    width: 22px;
+    height: 22px;
+    filter: invert(1);
+  }
+  > span {
+    top: -5px;
+    right: -5px;
+    min-width: 25px;
+    min-height: 25px;
+    font-weight: 500;
+    color: #fff;
+    background-color: $blueDark;
+  }
+  .navIcon-content {
+    top: 40px;
+    width: 300px;
+    max-height: 0;
+    border-radius: 5px;
+    overflow: hidden;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    overflow-y: scroll;
+    background-color: #fff;
+    box-shadow: 0px 10px 10px rgba(136, 136, 136, 0.651);
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    &.show {
+      max-height: 230px;
+      visibility: visible;
+    }
+    .navIcon-content-children {
+      min-height: 60px;
+      max-height: 60px;
+      border-bottom: 1px solid dimgrey;
+      color: #000;
+      transition: all 0.25s;
+      > p {
+        max-height: 60px;
+        padding: 5px 10px;
+        &::-webkit-scrollbar {
+          width: 8px;
+        }
+      }
+      &.profileAvatar {
+        padding: 0 10px;
+      }
+      > svg {
+        width: 22px;
+        height: 22px;
+        margin-right: 10px;
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+      &:hover {
+        background-color: $blueLight;
+      }
+      &.no-children {
+        height: 100px;
+        justify-content: center;
+        &:hover {
+          background-color: initial;
+          cursor: default;
+        }
+      }
+    }
+  }
+}

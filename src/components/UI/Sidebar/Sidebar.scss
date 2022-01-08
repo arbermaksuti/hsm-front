@@ -1,0 +1,144 @@
+@import "../../../sharedStyle/variables";
+
+.sidebar {
+  z-index: 150;
+  width: $sidebarWidth;
+  max-width: $sidebarWidth;
+  top: $navbarHeight;
+  max-height: 100%;
+  background-color: #fff;
+  border-right: 1px solid $blueBase;
+  box-shadow: 2px 5px 19px -8px rgba(0, 0, 0, 0.89);
+  transition: all 0.4s ease;
+  overflow-y: scroll !important;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  @media screen and (max-width: 800px) {
+    transform: translateX(-$sidebarMobileWidth - 60%);
+    width: $sidebarMobileWidth;
+    opacity: 0;
+    &.true {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .sidebar-item {
+    min-height: 50px;
+    padding: 0 20px;
+    transition: all 0.4s ease;
+    border-bottom: 1px solid $blueDark;
+    > p {
+      font-weight: 500;
+      letter-spacing: 2px;
+      color: #000;
+      margin-right: auto;
+      transition: all 0.5s ease-in-out;
+    }
+    > svg {
+      width: 25px;
+      height: 25px;
+      margin-right: 15px;
+      transition: all 0.5s ease-in-out;
+      stroke: #000;
+    }
+    > span {
+      min-width: 30px;
+      min-height: 30px;
+      font-weight: 500;
+      font-size: larger;
+      color: #fff;
+      background-color: $blueDark;
+    }
+    &:hover,
+    &.active {
+      background-color: $blueBase;
+      > p {
+        color: #fff;
+      }
+      > svg {
+        filter: invert(1);
+      }
+    }
+  }
+
+  .sidebar-user {
+    .sidebar-user-user {
+      color: #000;
+      position: relative;
+      padding: 5px 20px;
+      border: none;
+      outline: none;
+      width: 100%;
+      background-color: transparent;
+      border-bottom: 1px solid $blueLight;
+      transition: all 0.4s ease-in-out;
+      p{
+          font-size: 16px;
+      }
+      &:hover,
+      &.active {
+        background-color: $blueDark;
+        p {
+          color: #fff;
+        }
+        i {
+          color: greenyellow;
+        }
+        > img {
+          filter: invert(1);
+        }
+      }
+      > svg {
+        width: 20px;
+        height: 20px;
+        margin: 0 20px 0 10px;
+        transition: all 0.4s ease-in-out;
+      }
+    }
+    .sidebar-user-user-img {
+      width: 40px;
+      height: 40px;
+      background-color: #fff;
+      background-size: cover;
+      background-position: center top;
+      margin-right: 20px;
+    }
+    .sidebar-user-user-green-circle {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      left: calc(20px + 40px - 10px);
+      bottom: 5px;
+      position: absolute;
+      background-color: #008000;
+    }
+    .sidebar-user-user-name {
+      p {
+        font-size: 20px;
+        transition: all 0.4s ease-in-out;
+        @media screen and (max-width: 800px) {
+          font-size: 17px;
+        }
+      }
+      i {
+        font-size: 12px;
+        color: #008000;
+        font-weight: 700;
+        transition: all 0.4s ease-in-out;
+      }
+    }
+  }
+  
+
+  .textOnBottom {
+    bottom: 0;
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 500;
+    margin: 5px 0;
+    padding-top: 5px;
+  }
+}

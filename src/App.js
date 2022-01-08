@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { localStorageData } from "./localStorageData";
+import { IntlProvider } from "react-intl";
+import { translate } from "./translations";
+import { BrowserRouter } from "react-router-dom";
+import Routes from "./routes/Routes";
 
-function App() {
+const App = () => {
+  const [lang, setLang] = useState(localStorageData.getLocale() || "en-UK");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <IntlProvider
+      locale={lang}
+      formats={{ number: "en" }}
+      messages={translate[lang]}
+    >
+      <BrowserRouter>
+        <Routes lang={lang} setLang={setLang} />
+      </BrowserRouter>
+    </IntlProvider>
   );
-}
+};
 
 export default App;
