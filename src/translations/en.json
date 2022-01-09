@@ -59,6 +59,12 @@
     "ViewAllAdmins": "View All Admins",
     "View": "View",
     "Reply": "Reply",
-    "Clear": "Clear"
+    "Clear": "Clear",
+    "UserDetails": "User Details",
+    "Edit": "Edit",
+    "Delete": "Delete",
+    "Discard":"Discard",
+    "Save":"Save",
+    "Profile":"Profile"
   }
   

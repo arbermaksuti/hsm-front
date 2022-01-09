@@ -13,10 +13,9 @@ const Routes = ({ lang, setLang }) => {
     let userLogged = localStorageData.getUserLogin();
 
     useEffect(() => {
-        if ((userLogged) && (location === "/login" || location === "/")) {
-            navigate("/homepage")
-        }
-        else if ((!userLogged) && (location !== "/login")) {
+        if (userLogged && (location === "/login" || location === "/")) {
+            navigate("/homepage");
+        } else if (!userLogged && location !== "/login") {
             navigate("/login");
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -24,9 +23,17 @@ const Routes = ({ lang, setLang }) => {
 
     return (
         <Switch>
-            <Route exact path="login" element={<LoginPage lang={lang} setLang={setLang} />} />
+            <Route
+                exact
+                path="login"
+                element={<LoginPage lang={lang} setLang={setLang} />}
+            />
             {routesData.map((route, index) => (
-                <Route path={route.path} element={<Content children={route.component} />} key={index} />
+                <Route
+                    path={route.path}
+                    element={<Content children={route.component} />}
+                    key={index}
+                />
             ))}
             <Route path="*" element={<ErrorPage />} />
         </Switch>

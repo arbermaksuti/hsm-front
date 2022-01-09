@@ -1,12 +1,12 @@
-import React from 'react'
-import variables from '../../../sharedStyle/_variables.scss'
+import React from "react";
+import variables from "../../../sharedStyle/_variables.scss";
 
 const backdropStyle = {
-    zIndex: '100',
+    zIndex: "100",
     top: variables.navbarHeight,
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
-    transition: 'all 0.5s ease-in-out',
-}
+    backgroundColor: "rgba(0, 0, 0, 0.5)",
+    transition: "all 0.5s ease-in-out",
+};
 
 const Backdrop = ({ show, hide }) =>
     show ? (
@@ -15,6 +15,6 @@ const Backdrop = ({ show, hide }) =>
             style={backdropStyle}
             className="p-fixed w-100 h-100 l-0"
         />
-    ) : null
+    ) : null;
 
-export default Backdrop
+export default Backdrop;

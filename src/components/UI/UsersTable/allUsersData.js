@@ -1,11 +1,14 @@
+import userImg from "../../../assets/images/user.jpg"
+
 export const allUsersData = [
     {
         id: 1,
-        name: 'Arber',
+        name: 'Arbër',
         surname: 'Maksuti',
         email: 'arbermaksuti@gmail.com',
         role: 'Admin',
-        // cell: () => <button>Details</button>
+        username: "arbermaksuti",
+        image: userImg,
     },
     {
         id: 2,
@@ -13,7 +16,7 @@ export const allUsersData = [
         surname: 'Imeri',
         email: 'lirimimeri@gmail.com',
         role: 'Admin',
-        // cell: () => <button>Details</button>
+        username: "lirimimeri"
     },
     {
         id: 3,
@@ -21,7 +24,7 @@ export const allUsersData = [
         surname: 'Isahu',
         email: 'shpejtimisahu@gmail.com',
         role: 'Doctor',
-        // cell: () => <button>Details</button>
+        username: "shpejtimisahu"
     },
     {
         id: 3,
@@ -29,6 +32,6 @@ export const allUsersData = [
         surname: 'Bilalli',
         email: 'shkelqimBilalli@gmail.com',
         role: 'Patient',
-        // cell: () => <button>Details</button>
+        username: "shkelqimbilalli"
     },
 ]

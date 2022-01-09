@@ -1,0 +1,122 @@
+@import "../../../sharedStyle/variables";
+
+.userDetailsP {
+  .userDetailsP-user {
+    padding-top: 40px;
+    .inputPure {
+      margin: auto;
+      &.margin-right {
+        margin-right: 20px;
+      }
+    }
+  }
+  .image-input {
+    width: 160px;
+    height: 160px;
+    background-color: #fff;
+    background-size: cover;
+    background-position: center top;
+    border-radius: 5px;
+    position: relative;
+    &.noImage {
+      border: 1px solid #000;
+    }
+    > span {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      svg {
+        width: 20px;
+        height: 20px;
+        path {
+          stroke: $blueBase;
+        }
+      }
+    }
+    .fileInput {
+      opacity: 0;
+      width: 160px;
+      height: 160px;
+      &.true {
+        cursor: pointer;
+      }
+    }
+  }
+  .userDetailsP-user-bottom {
+    width: fit-content;
+    margin-top: 100px;
+    margin-left: auto;
+    .buttonPure {
+      &:first-of-type {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .image-input {
+      margin-left: 20px;
+      width: 100px;
+      height: 100px;
+      .fileInput {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .userDetailsP-user {
+      padding-top: 20px;
+    
+    .userDetailsP-user-top {
+      > .d-flex {
+        flex-direction: column;
+        >.inputPure{
+          margin: 0;
+          &:first-of-type{
+            margin-bottom: 25px;
+          }
+        }
+      }.image-input {
+        margin-left: 10px;
+        width: 130px;
+        height: 130px;
+        .fileInput {
+          width: 130px;
+          height: 130px;
+        }
+      }
+    }
+  }
+  }
+}
+
+.modal {
+  .deleteUserModal {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    h2 {
+      font-weight: normal;
+      span {
+        font-weight: 500;
+        font-size: 30px;
+      }
+    }
+    p {
+      margin-top: 5px;
+      margin-left: 10px;
+      font-size: 14px;
+      font-style: italic;
+    }
+    .deleteUserModal-Buttons {
+      margin-top: 50px;
+      width: fit-content;
+      margin-left: auto;
+      .buttonPure {
+        &:first-of-type {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}

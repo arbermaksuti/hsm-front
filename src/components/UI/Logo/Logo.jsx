@@ -1,7 +1,7 @@
-import React from 'react'
-import './Logo.scss'
-import { Link } from 'react-router-dom'
-import logo from '../../../assets/logo.png'
+import React from "react";
+import "./Logo.scss";
+import { Link } from "react-router-dom";
+import logo from "../../../assets/logo.png";
 
 const Logo = () => {
     return (
@@ -11,7 +11,7 @@ const Logo = () => {
             <span />
             <h3>Hospital Management System</h3>
         </Link>
-    )
-}
+    );
+};
 
-export default Logo
+export default Logo;

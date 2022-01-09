@@ -1,9 +1,9 @@
 @import "../../../sharedStyle/variables";
 
 .allUsers {
-    > h3 {
-      font-weight: 500;
-    }
+  > h3 {
+    font-weight: 500;
+  }
   .allUsers-Content {
     margin-top: 10px;
     .allUsers-Div {
@@ -18,10 +18,11 @@
           color: $blueLight;
         }
       }
-    
-    > .buttonPure {
-      font-size: 16px;
-    }}
+
+      > .buttonPure {
+        font-size: 16px;
+      }
+    }
   }
   @media screen and(max-width: 600px) {
     > h3 {

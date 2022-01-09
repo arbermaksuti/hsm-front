@@ -1,7 +1,9 @@
 import LoginPage from "../components/SharedPages/LoginPage/LoginPage"
+import UserDetails from "../components/SharedPages/UserDetails/UserDetails"
 import NotificationsPage from "../components/SharedPages/NotificationsPage/NotificationsPage"
 import MessagesPage from "../components/SharedPages/MessagesPage/MessagesPage"
 import HelpPage from "../components/SharedPages/HelpPage/HelpPage"
+import ProfilePage from "../components/SharedPages/ProfilePage/ProfilePage"
 import SettingsPage from "../components/SharedPages/SettingsPage/SettingsPage"
 import ErrorPage from "../components/SharedPages/ErrorPage/ErrorPage"
 import AdminHomePage from "../components/AdminUser/Admin_HomePage/Admin_HomePage"
@@ -37,6 +39,10 @@ const routesData = [
 
     // Shared Routes
     {
+        path: "/user-details/:username",
+        component: <UserDetails />
+    },
+    {
         path: "/notifications",
         component: <NotificationsPage />
     },
@@ -47,6 +53,10 @@ const routesData = [
     {
         path: "/help",
         component: <HelpPage />
+    },
+    {
+        path: "/profile",
+        component: <ProfilePage />
     },
     {
         path: "/settings",

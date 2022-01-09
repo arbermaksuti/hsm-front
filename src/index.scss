@@ -1,0 +1,24 @@
+@import "./sharedStyle/_variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+a {
+  text-decoration: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+// Toastify notification goes under navbar
+#root {
+  .Toastify {
+    .Toastify__toast-container--top-right {
+      top: $navbarHeight;
+    }
+  }
+}

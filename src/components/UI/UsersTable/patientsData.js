@@ -5,6 +5,6 @@ export const patientsData = [
         surname: 'Bilalli',
         email: 'shkelqimBilalli@gmail.com',
         role: 'Patient',
-        // cell: () => <button>Details</button>
+        username: "shkelqimbilalli"
     },
 ]

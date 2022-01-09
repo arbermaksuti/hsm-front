@@ -5,7 +5,7 @@ export const adminsData = [
         surname: 'Maksuti',
         email: 'arbermaksuti@gmail.com',
         role: 'Admin',
-        // cell: () => <button>Details</button>
+        username: "arbermaksuti",
     },
     {
         id: 2,
@@ -13,6 +13,6 @@ export const adminsData = [
         surname: 'Imeri',
         email: 'lirimimeri@gmail.com',
         role: 'Admin',
-        // cell: () => <button>Details</button>
+        username: "lirimimeri"
     },
 ]

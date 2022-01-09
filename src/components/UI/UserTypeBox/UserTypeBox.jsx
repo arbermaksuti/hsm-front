@@ -1,8 +1,8 @@
 import React from "react";
-import "./UserTypeBox.scss"
-import doctorImg from "../../../assets/images/doctor.png"
-import patientImg from "../../../assets/images/patient.png"
-import { GiCheckMark } from "react-icons/gi"
+import "./UserTypeBox.scss";
+import doctorImg from "../../../assets/images/doctor.png";
+import patientImg from "../../../assets/images/patient.png";
+import { GiCheckMark } from "react-icons/gi";
 
 const UserTypeBox = ({ type, text, onClick, userSelected }) => {
     return (
@@ -11,7 +11,12 @@ const UserTypeBox = ({ type, text, onClick, userSelected }) => {
                 }`}
             onClick={onClick}
         >
-            <img src={type === "Doctor" ? doctorImg : type === "Patient" ? patientImg : null} alt={type} />
+            <img
+                src={
+                    type === "Doctor" ? doctorImg : type === "Patient" ? patientImg : null
+                }
+                alt={type}
+            />
             <h3>{text}</h3>
             {userSelected === text.props.defaultMessage && (
                 <span className="userTypeBox-selected p-absolute d-flex ai-center jc-center br-50">

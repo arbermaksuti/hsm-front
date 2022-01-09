@@ -1,8 +1,8 @@
-import React from 'react'
-import "./Navbar.scss"
-import Logo from '../Logo/Logo'
-import NavIcons from '../NavIcons/NavIcons'
-import Hamburger from '../Hamburger/Hamburger'
+import React from "react";
+import "./Navbar.scss";
+import Logo from "../Logo/Logo";
+import NavIcons from "../NavIcons/NavIcons";
+import Hamburger from "../Hamburger/Hamburger";
 
 const Navbar = ({ onClick, sideB, userImg }) => {
     return (
@@ -11,7 +11,7 @@ const Navbar = ({ onClick, sideB, userImg }) => {
             <NavIcons userImg={userImg} />
             <Hamburger onClick={onClick} openSideB={sideB} />
         </div>
-    )
-}
+    );
+};
 
-export default Navbar
+export default Navbar;

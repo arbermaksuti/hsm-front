@@ -30,6 +30,20 @@
       background-color: $blueBase;
     }
   }
+  &.red {
+    background-color: #ff0000;
+    color: #fff;
+    &:hover {
+      background-color: #7e0000;
+    }
+  }
+  &.green {
+    background-color:#00ac00;
+    color: #fff;
+    &:hover {
+      background-color: #014e01;
+    }
+  }
   &.larger {
     font-size: 18px;
     padding: 10px 20px;

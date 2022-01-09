@@ -1,9 +1,10 @@
 import * as actionTypes from "./actionTypes";
 
-export const showModal = (newUserRole) => {
+export const showModal = (newUserRole, modalContent) => {
   return {
     type: actionTypes.SHOW_MODAL,
     newUserRole: newUserRole,
+    modalContent: modalContent,
   };
 };
 
