@@ -45,7 +45,11 @@
       background-color: $blueBase;
     }
   }
-  > input[type="file"] {
-    cursor: pointer;
+  > i{
+    >svg{
+      > path{
+      stroke: $blueBase;
+      }
+    }
   }
 }

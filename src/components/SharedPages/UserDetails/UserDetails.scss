@@ -1,95 +1,100 @@
-@import "../../../sharedStyle/variables";
+// @import "../../../sharedStyle/variables";
 
-.userDetailsP {
-  .userDetailsP-user {
-    padding-top: 40px;
-    .inputPure {
-      margin: auto;
-      &.margin-right {
-        margin-right: 20px;
-      }
-    }
-  }
-  .image-input {
-    width: 160px;
-    height: 160px;
-    background-color: #fff;
-    background-size: cover;
-    background-position: center top;
-    border-radius: 5px;
-    position: relative;
-    &.noImage {
-      border: 1px solid #000;
-    }
-    > span {
-      position: absolute;
-      top: 5px;
-      right: 5px;
-      svg {
-        width: 20px;
-        height: 20px;
-        path {
-          stroke: $blueBase;
-        }
-      }
-    }
-    .fileInput {
-      opacity: 0;
-      width: 160px;
-      height: 160px;
-      &.true {
-        cursor: pointer;
-      }
-    }
-  }
-  .userDetailsP-user-bottom {
-    width: fit-content;
-    margin-top: 100px;
-    margin-left: auto;
-    .buttonPure {
-      &:first-of-type {
-        margin-right: 20px;
-      }
-    }
-  }
+// .userDetailsP {
+//   .userDetailsP-user {
+//     padding-top: 40px;
+//     .inputPure {
+//       margin: auto;
+//       &.margin-right {
+//         margin-right: 20px;
+//       }
+//     }
+//   }
+//   .userDetailsP-user-top {
+//     // border: 2px solid red;
+//     > div {
+//       border: 2px solid red;
+//       width: 80%;
+//     }
+//   }
+//   .image-input {
+//     width: 160px;
+//     height: 160px;
+//     background-color: #fff;
+//     background-size: cover;
+//     background-position: center top;
+//     border-radius: 5px;
+//     position: relative;
+//     &.noImage {
+//       border: 1px solid #000;
+//     }
+//     > span {
+//       position: absolute;
+//       top: 5px;
+//       right: 5px;
+//       svg {
+//         width: 20px;
+//         height: 20px;
+//         path {
+//           stroke: $blueBase;
+//         }
+//       }
+//     }
+//     .fileInput {
+//       display: none;
+//       // &.true {
+//       //   cursor: pointer;
+//       // }
+//     }
+//   }
+//   .userDetailsP-user-bottom {
+//     width: fit-content;
+//     margin-top: 100px;
+//     margin-left: auto;
+//     .buttonPure {
+//       &:first-of-type {
+//         margin-right: 20px;
+//       }
+//     }
+//   }
 
-  @media screen and (max-width: 1000px) {
-    .image-input {
-      margin-left: 20px;
-      width: 100px;
-      height: 100px;
-      .fileInput {
-        width: 100px;
-        height: 100px;
-      }
-    }
-  }
-  @media screen and (max-width: 600px) {
-    .userDetailsP-user {
-      padding-top: 20px;
-    
-    .userDetailsP-user-top {
-      > .d-flex {
-        flex-direction: column;
-        >.inputPure{
-          margin: 0;
-          &:first-of-type{
-            margin-bottom: 25px;
-          }
-        }
-      }.image-input {
-        margin-left: 10px;
-        width: 130px;
-        height: 130px;
-        .fileInput {
-          width: 130px;
-          height: 130px;
-        }
-      }
-    }
-  }
-  }
-}
+//   @media screen and (max-width: 1000px) {
+//     .image-input {
+//       margin-left: 20px;
+//       width: 100px;
+//       height: 100px;
+//       .fileInput {
+//         width: 100px;
+//         height: 100px;
+//       }
+//     }
+//   }
+//   @media screen and (max-width: 600px) {
+//     .userDetailsP-user {
+//       padding-top: 20px;
+
+//     .userDetailsP-user-top {
+//       > .d-flex {
+//         flex-direction: column;
+//         >.inputPure{
+//           margin: 0;
+//           &:first-of-type{
+//             margin-bottom: 25px;
+//           }
+//         }
+//       }.image-input {
+//         margin-left: 10px;
+//         width: 130px;
+//         height: 130px;
+//         .fileInput {
+//           width: 130px;
+//           height: 130px;
+//         }
+//       }
+//     }
+//   }
+//   }
+// }
 
 .modal {
   .deleteUserModal {
@@ -99,13 +104,12 @@
       font-weight: normal;
       span {
         font-weight: 500;
-        font-size: 30px;
+        font-size: 26px;
       }
     }
     p {
-      margin-top: 5px;
-      margin-left: 10px;
-      font-size: 14px;
+      margin-top: 2px;
+      font-size: 12px;
       font-style: italic;
     }
     .deleteUserModal-Buttons {
@@ -116,6 +120,82 @@
         &:first-of-type {
           margin-right: 20px;
         }
+      }
+    }
+  }
+}
+
+@import '../../../sharedStyle/variables';
+
+.userDetailsP {
+  .userDetailsP-Content-Top {
+    padding-top: 20px;
+    .userDetailsP-Content-Top-Inputs {
+      width: 75%;
+      height: 120px;
+      .inputPure {
+        width: 100%;
+        margin: 0;
+      }
+    }
+    .userDetailsP-Content-Top-ImageInput {
+      max-width: 20%;
+      width: 140px;
+      height: 140px;
+      border-radius: 5px;
+      background-color: #fff;
+      background-size: cover;
+      background-position: center top;
+      &.noImage {
+        border: 1px solid #000;
+      }
+      span {
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        svg {
+          width: 25px;
+          height: 25px;
+          path {
+            stroke: $blueBase;
+          }
+        }
+      }
+      .fileInput {
+        display: none;
+      }
+    }
+  }
+
+  .userDetailsP-Content-Middle {
+    padding-top: 40px;
+    .userDetailsP-Content-Middle-Inputs {
+      width: 100%;
+      .inputPure {
+        width: 100%;
+        margin-bottom: 35px;
+      }
+    }
+  }
+
+  .userDetailsP-Content-Bottom {
+    width: fit-content;
+    margin-left: auto;
+    margin-top: 40px;
+    .buttonPure {
+      &:first-of-type {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .userDetailsP-Content-Top {
+      .userDetailsP-Content-Top-Inputs {
+        max-width: 65%;
+      }
+      .userDetailsP-Content-Top-ImageInput {
+        max-width: 30%;
       }
     }
   }
